@@ -1,0 +1,12 @@
+E:\C#\Reminder\Reminder\obj\Debug\Reminder.AboutBox.resources
+E:\C#\Reminder\Reminder\obj\Debug\Reminder.MainFrm.resources
+E:\C#\Reminder\Reminder\obj\Debug\Reminder.WorkFrm.resources
+E:\C#\Reminder\Reminder\obj\Debug\Reminder.Properties.Resources.resources
+E:\C#\Reminder\Reminder\obj\Debug\Reminder.RestFrm.resources
+E:\C#\Reminder\Reminder\obj\Debug\Sedentary Reminder.csproj.GenerateResource.cache
+E:\C#\Reminder\Reminder\obj\Debug\Sedentary Reminder.csproj.CoreCompileInputs.cache
+E:\C#\Reminder\Reminder\bin\Debug\Reminder.exe
+E:\C#\Reminder\Reminder\bin\Debug\Reminder.pdb
+E:\C#\Reminder\Reminder\obj\Debug\Reminder.exe
+E:\C#\Reminder\Reminder\obj\Debug\Reminder.pdb
+E:\C#\Reminder\Reminder\obj\Debug\Sedentary Reminder.csprojAssemblyReference.cache
