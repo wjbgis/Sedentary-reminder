@@ -190,6 +190,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RestFrm";
             this.Opacity = 0.75D;
+            this.ShowInTaskbar = false;
             this.Text = "RestFrm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RestFrm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RestFrm_FormClosed);

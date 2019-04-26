@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 
@@ -16,6 +18,7 @@ namespace Reminder
         private int rst_m2;
         private bool input_flag;
         int rst_s = 0;
+        
         public RestFrm()
         {
             InitializeComponent();
@@ -30,7 +33,7 @@ namespace Reminder
         }
         
         private void RestFrm_Load(object sender, EventArgs e)
-        {
+        {           
             if (input_flag)
             {
                 lblText.Text = "您已久坐" + rst_m.ToString() + "分钟了，键盘和鼠标被锁定，站起来活动下！";
@@ -49,7 +52,7 @@ namespace Reminder
             this.Opacity = 0.75;
             if (input_flag)
             {
-                KeyboardBlocker.off();//锁定键盘
+                KeyboardBlocker.off();//锁定键盘               
             }
 
             if (rst_s >= 10)
@@ -115,13 +118,15 @@ namespace Reminder
                 }
                 else
                 {
+                    
                     WorkFrm workFrm = new WorkFrm(wrk_m,rst_m2,input_flag);
                     workFrm.Show();
-                    this.Close();
+                    
                     if (input_flag)
-                    {
+                    {                       
                         KeyboardBlocker.on();//解锁键盘
                     }
+                    this.Close();
                 }
             }
         }

@@ -109,7 +109,6 @@
   <ItemGroup>
     <Content Include="Alarm_clock_96px_1176926_easyicon.net.ico" />
     <Content Include="appointment_reminder_stock_64px_43056_easyicon.net.ico" />
-    <Content Include="ICO.ico" />
     <Content Include="ICO2.ico" />
   </ItemGroup>
   <ItemGroup>
