@@ -20,3 +20,4 @@
   ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/3.png)
 * 休息结束，继续开始工作倒计时
 * **支持系统：Win7/10**
+* [百度网盘下载](https://pan.baidu.com/s/1SCYO1Qzz3ULmONQwkCajEA). 提取码：5znz
