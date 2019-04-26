@@ -18,3 +18,4 @@
 * 倒计时结束，显示遮罩层，屏蔽鼠标、键盘
 
   ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/3.png)
+* **支持系统：Win7/10**
