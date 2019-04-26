@@ -15,7 +15,7 @@
 
   ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/2.png)
 
-* 倒计时结束，显示遮罩层，屏蔽鼠标、键盘
+* 倒计时结束，显示遮罩层，屏蔽鼠标、键盘（为防止意外，未屏蔽`ctrl`+`alt`+`del`组合按键，可通过该组合键关机，但无法使用任务管理器）
 
   ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/3.png)
 * 休息结束，继续开始工作倒计时
