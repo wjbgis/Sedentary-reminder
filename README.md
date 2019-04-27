@@ -1,7 +1,7 @@
 # Sedentary-reminder 久坐提醒小工具
-> ​	**喜欢请点个star, 万分感激！**
+> **喜欢请点个star, 万分感激！**  
 >
-> * 百度网盘下载](https://pan.baidu.com/s/1r3nRlQee-yupiCVbNuscPg). 提取码：mixt
+> [百度网盘下载](https://pan.baidu.com/s/1r3nRlQee-yupiCVbNuscPg). 提取码：mixt
 * 2019/04/27更新：修复了锁定时时间显示不对的问题
   ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/0.png)
 
