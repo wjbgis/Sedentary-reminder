@@ -1,5 +1,5 @@
 # Sedentary-reminder
-
+* 2019/04/27更新：修复了锁定时时间显示不对的问题
 
 ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/0.png)
 
@@ -20,4 +20,4 @@
   ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/3.png)
 * 休息结束，继续开始工作倒计时
 * **支持系统：Win7/10**
-* [百度网盘下载](https://pan.baidu.com/s/1SCYO1Qzz3ULmONQwkCajEA). 提取码：5znz
+* [百度网盘下载](https://pan.baidu.com/s/1r3nRlQee-yupiCVbNuscPg). 提取码：mixt

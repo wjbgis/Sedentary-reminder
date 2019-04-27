@@ -36,11 +36,11 @@ namespace Reminder
         {           
             if (input_flag)
             {
-                lblText.Text = "您已久坐" + rst_m.ToString() + "分钟了，键盘和鼠标被锁定，站起来活动下！";
+                lblText.Text = "您已久坐" + wrk_m.ToString() + "分钟了，键盘和鼠标被锁定，站起来活动下！";
             }
             else
             {
-                lblText.Text = "您已久坐" + rst_m.ToString() + "分钟了，站起来活动下！Alt+F4 退出本界面。";
+                lblText.Text = "您已久坐" + wrk_m.ToString() + "分钟了，站起来活动下！Alt+F4 退出本界面。";
             }
 
             //lblText.Text = "您已久坐60分钟了，键盘和鼠标被锁定，站起来活动下！";
