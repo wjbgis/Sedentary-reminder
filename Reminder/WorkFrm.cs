@@ -58,6 +58,8 @@ namespace Reminder
             {
                 lblMin.Text = "0"+wrk_minutes.ToString();
             }
+
+            this.Opacity = 0.85;
             
         }
 
