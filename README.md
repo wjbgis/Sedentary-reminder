@@ -1,7 +1,7 @@
 # Sedentary-reminder 久坐提醒小工具
 > **如若对您有用，请点个star, 万分感激！**  
 >
-> [百度网盘下载](https://pan.baidu.com/s/1DbNsMW955fhtyVv1XwlP6A). 提取码：88yg
+> [百度网盘下载](https://pan.baidu.com/s/14herT2LVEhd7w6rBGL1sqQ). 提取码：mo1w
 
 > * 2019/04/27更新：修复了锁定时时间显示不对的问题。
 > * 2019/04/28更新：增加“即将休息”提示信息，更改了工作倒计时背景色，修复一些小问题，重置了百度网盘下载链接。
