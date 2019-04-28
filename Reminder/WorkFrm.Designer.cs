@@ -34,7 +34,7 @@
             this.lblSecond = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblWarn = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -80,17 +80,17 @@
             this.label2.TabIndex = 6;
             this.label2.Text = ":";
             // 
-            // label1
+            // lblWarn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("楷体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(37, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 21);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "注意坐姿";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            this.lblWarn.AutoSize = true;
+            this.lblWarn.Font = new System.Drawing.Font("楷体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblWarn.ForeColor = System.Drawing.Color.White;
+            this.lblWarn.Location = new System.Drawing.Point(33, 8);
+            this.lblWarn.Name = "lblWarn";
+            this.lblWarn.Size = new System.Drawing.Size(102, 21);
+            this.lblWarn.TabIndex = 7;
+            this.lblWarn.Text = "注意坐姿";
+            this.lblWarn.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label3
             // 
@@ -103,17 +103,17 @@
             // WorkFrm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(148, 55);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblWarn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblMin);
             this.Controls.Add(this.lblSecond);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "WorkFrm";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.85D;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.TopMost = true;
@@ -129,7 +129,7 @@
         private System.Windows.Forms.Label lblSecond;
         private System.Windows.Forms.Label lblMin;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblWarn;
         private System.Windows.Forms.Label label3;
     }
 }

@@ -1,7 +1,7 @@
 # Sedentary-reminder 久坐提醒小工具
 > **喜欢请点个star, 万分感激！**  
 >
-> [百度网盘下载](https://pan.baidu.com/s/1r3nRlQee-yupiCVbNuscPg). 提取码：mixt
+> [百度网盘下载](https://pan.baidu.com/s/1DbNsMW955fhtyVv1XwlP6A). 提取码：88yg
 * 2019/04/27更新：修复了锁定时时间显示不对的问题
   ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/0.png)
 
@@ -16,11 +16,17 @@
 
 * 点击`开始`之后就开始倒计时
 
-  ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/2.png)
+  ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/2.1.png)
+
+* 工作倒计时剩余15秒时，提示用户即将锁定输入
+
+  ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/4.png)
 
 * 倒计时结束，显示遮罩层，屏蔽鼠标、键盘（为防止意外，未屏蔽`ctrl`+`alt`+`del`组合按键，可通过该组合键关机，但无法使用任务管理器）
 
   ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/3.png)
+  
 * 休息结束，继续开始工作倒计时
+
 * **支持系统：Win7/10**
 

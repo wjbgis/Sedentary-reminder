@@ -65,11 +65,14 @@ namespace Reminder
         {
             timing();
         }
+
         /// <summary>
         /// 递归的方式倒计时
         /// </summary>
         public  void timing()
         {
+            Warn();
+
             if (wrk_seconds > 0)
             {
                 wrk_seconds = wrk_seconds - 1;
@@ -100,35 +103,42 @@ namespace Reminder
                 {
                     timerWrk.Enabled = true;
                     wrk_seconds = 60;
+                    
                     timing();
                 }
                 else
                 {
+
                     this.Close();
                     RestFrm restFrm = new RestFrm(rst_minutes, wrk_m, input_flag);
-                    restFrm.ShowDialog();
-                    //if (wrk_minutes == 0 && wrk_seconds != 0)
-                    //{
-                    //    wrk_seconds = 60;
-                    //    timing();
-                    //}
-                    //else
-                    //{
-
-                    //}
-
+                    restFrm.ShowDialog();                   
                 }
             }
         }
 
+        /// <summary>
+        /// 工作的最后15秒提醒
+        /// </summary>
+        private void Warn()
+        {
+            if (wrk_minutes==0&&wrk_seconds<=16)
+            {
+                this.BackColor = Color.Red;
+                lblWarn.ForeColor = Color.Yellow;
+                lblWarn.Text = "该休息了！";
+                int x = (System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Size.Width) / 2 - this.Width/2;
+                int y = (System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Size.Height) / 2 - this.Height/2;
+                Point p = new Point(x, y);
+                this.PointToScreen(p);
+                this.Location = p;
+            }         
+            
+        }
+
+
         private void MainFrm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            ////取消关闭窗口
-            //e.Cancel = true;
-            ////最小化主窗口
-            //this.WindowState = FormWindowState.Minimized;
-            ////不在系统任务栏显示主窗口图标
-            //this.ShowInTaskbar = false;
+            
         }
 
         private void LblSecond_Click(object sender, EventArgs e)

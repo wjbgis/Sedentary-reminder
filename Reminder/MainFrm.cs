@@ -69,6 +69,7 @@ namespace Reminder
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            notifyIcon1.Visible = false;
             System.Environment.Exit(0);
         }
 
