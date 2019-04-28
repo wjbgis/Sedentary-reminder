@@ -1,5 +1,5 @@
 # Sedentary-reminder 久坐提醒小工具
-> **喜欢请点个star, 万分感激！**  
+> **如若对您有用，请点个star, 万分感激！**  
 >
 > [百度网盘下载](https://pan.baidu.com/s/1DbNsMW955fhtyVv1XwlP6A). 提取码：88yg
 
