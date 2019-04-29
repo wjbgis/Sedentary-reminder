@@ -116,6 +116,7 @@
             this.Opacity = 0.85D;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "wrkFrm";
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFrm_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);

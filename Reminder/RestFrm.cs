@@ -117,14 +117,16 @@ namespace Reminder
                     timing();
                 }
                 else
-                {
-                    
-                    WorkFrm workFrm = new WorkFrm(wrk_m,rst_m2,input_flag);
-                    workFrm.Show();
-                    
+                {                    
                     if (input_flag)
                     {                       
                         KeyboardBlocker.on();//解锁键盘
+                    }
+
+                    if (rst_s == 0)
+                    {
+                        WorkFrm workFrm = new WorkFrm(wrk_m, rst_m2, input_flag);
+                        workFrm.Show();
                     }
                     this.Close();
                 }
@@ -138,8 +140,8 @@ namespace Reminder
 
         private void RestFrm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            WorkFrm workFrm = new WorkFrm(wrk_m, rst_m2, input_flag);
-            workFrm.Show();
+            //WorkFrm workFrm = new WorkFrm(wrk_m, rst_m2, input_flag);
+           // workFrm.Show();
         }
     }
 }
