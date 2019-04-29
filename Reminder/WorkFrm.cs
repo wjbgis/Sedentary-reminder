@@ -15,7 +15,9 @@ namespace Reminder
         private int wrk_seconds;//工作时间(秒)
         private int wrk_m;
         private int rst_minutes;//休息时间(分)
-        private bool input_flag;
+        private bool input_flag;//是否选中锁定键盘
+        private bool left_flag;//鼠标左键是否点击
+        private Point mouseoff;
         public WorkFrm()
         {
             InitializeComponent();
@@ -151,6 +153,62 @@ namespace Reminder
         private void Label1_Click(object sender, EventArgs e)
         {
 
+        }
+        private void mouseDown(MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                mouseoff = new Point(e.X, e.Y);
+                left_flag = true;
+
+            }
+        }
+        private void mouseMove()
+        {
+            if (left_flag)
+            {
+                Point mouseSet = Control.MousePosition;
+                mouseSet.Offset(-mouseoff.X, -mouseoff.Y);//这里注意下-的用意，offset
+                Location = mouseSet;
+            }
+        }
+        private void mouseUp()
+        {
+            if (left_flag)
+            {
+                left_flag = false;
+            }
+        }
+        private void WorkFrm_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown(e);
+        }
+
+        private void WorkFrm_MouseMove(object sender, MouseEventArgs e)
+        {
+            mouseMove();
+        }
+
+        private void WorkFrm_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseUp();
+        }
+
+      
+
+        private void LblWarn_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void LblWarn_MouseMove(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void LblWarn_MouseUp(object sender, MouseEventArgs e)
+        {
+           
         }
     }
 }
