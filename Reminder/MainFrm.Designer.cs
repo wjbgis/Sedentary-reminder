@@ -159,8 +159,8 @@
             this.contextMenuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.主窗体ToolStripMenuItem,
-            this.exit_ToolStripMenuItem,
-            this.关于ToolStripMenuItem});
+            this.关于ToolStripMenuItem,
+            this.exit_ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
             // 
