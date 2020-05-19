@@ -42,6 +42,19 @@ namespace Reminder
         
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            //任务栏高度
+            //Size OutTaskBarSize = new Size(SystemInformation.WorkingArea.Width, SystemInformation.WorkingArea.Height);
+            //Size ScreenSize = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            //this.Height = ScreenSize.Height - OutTaskBarSize.Height;
+            //Size TaskBarSize;
+
+            //TaskBarSize = new Size(
+            //                (ScreenSize.Width - (ScreenSize.Width - OutTaskBarSize.Width)),
+            //                (ScreenSize.Height - OutTaskBarSize.Height)
+             //               );
+            
+
             wrk_seconds = 0; 
 
             if (wrk_seconds >= 10)
@@ -61,7 +74,7 @@ namespace Reminder
                 lblMin.Text = "0"+wrk_minutes.ToString();
             }
 
-            this.Opacity = 0.85;
+            this.Opacity = 0.8;
             
         }
 
@@ -137,6 +150,22 @@ namespace Reminder
                 this.Location = p;
             }         
             
+        }
+
+        /// <summary>
+        /// 让程序不显示在alt+Tab视图窗体中
+        /// </summary>
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                const int WS_EX_APPWINDOW = 0x40000;
+                const int WS_EX_TOOLWINDOW = 0x80;
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle &= (~WS_EX_APPWINDOW);    // 不显示在TaskBar
+                cp.ExStyle |= WS_EX_TOOLWINDOW;      // 不显示在Alt+Tab
+                return cp;
+            }
         }
 
 

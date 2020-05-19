@@ -10,3 +10,14 @@ E:\C#\Reminder\Reminder\bin\Debug\Reminder.pdb
 E:\C#\Reminder\Reminder\obj\Debug\Reminder.exe
 E:\C#\Reminder\Reminder\obj\Debug\Reminder.pdb
 E:\C#\Reminder\Reminder\obj\Debug\Sedentary Reminder.csprojAssemblyReference.cache
+E:\Demo\Sedentary-reminder\Reminder\bin\Debug\Reminder.exe
+E:\Demo\Sedentary-reminder\Reminder\bin\Debug\Reminder.pdb
+E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Sedentary Reminder.csprojAssemblyReference.cache
+E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.AboutBox.resources
+E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.MainFrm.resources
+E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.WorkFrm.resources
+E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.Properties.Resources.resources
+E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.RestFrm.resources
+E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Sedentary Reminder.csproj.GenerateResource.cache
+E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.exe
+E:\Demo\Sedentary-reminder\Reminder\obj\Debug\Reminder.pdb

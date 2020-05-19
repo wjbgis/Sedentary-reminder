@@ -91,6 +91,7 @@
             this.lblText.Size = new System.Drawing.Size(509, 29);
             this.lblText.TabIndex = 3;
             this.lblText.Text = "键盘和鼠标被锁定，站起来活动下！";
+            this.lblText.Click += new System.EventHandler(this.lblText_Click);
             // 
             // label2
             // 

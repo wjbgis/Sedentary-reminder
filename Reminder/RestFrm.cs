@@ -143,5 +143,10 @@ namespace Reminder
             //WorkFrm workFrm = new WorkFrm(wrk_m, rst_m2, input_flag);
            // workFrm.Show();
         }
+
+        private void lblText_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
