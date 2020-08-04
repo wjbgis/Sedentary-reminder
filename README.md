@@ -4,8 +4,6 @@
 
 [Download](https://github.com/wjbgis/Sedentary-reminder/releases)
 
-**如若对您有用，请点个star, 万分感激！**
-
 ## 介绍
 
 ![](https://github.com/wjbgis/Sedentary-reminder/blob/master/ScreenShot/0.png)
