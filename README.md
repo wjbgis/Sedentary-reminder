@@ -1,5 +1,9 @@
 # Sedentary-reminder 久坐提醒小工具
 
+## Repo rosters
+[![Stargazers repo roster for @wjbgis/Sedentary-reminder](https://reporoster.com/stars/wjbgis/Sedentary-reminder)](https://github.com/wjbgis/Sedentary-reminder/stargazers)
+[![Forkers repo roster for @wjbgis/Sedentary-reminder](https://reporoster.com/forks/wjbgis/Sedentary-reminder)](https://github.com/wjbgis/Sedentary-reminder/network/members)
+
 ## 下载  
 
 [Download](https://github.com/wjbgis/Sedentary-reminder/releases)
