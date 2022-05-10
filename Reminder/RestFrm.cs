@@ -18,18 +18,24 @@ namespace Reminder
         private int rst_m2;
         private bool input_flag;
         int rst_s = 0;
+        private bool main_screen;
         
         public RestFrm()
         {
             InitializeComponent();
         }
-        public RestFrm(int rst_minutes,int wrk_minutes, bool input_flag)
+        public RestFrm(int rst_minutes,int wrk_minutes, bool input_flag, bool main_screen, Point location)
         {
             InitializeComponent();
             this.rst_m = rst_minutes;
             this.wrk_m = wrk_minutes;
             this.rst_m2 = rst_minutes;
             this.input_flag = input_flag;
+            // create the workFrm on the main screen, so use this to check
+            this.main_screen = main_screen;
+            // Manual that the form will be created on the position depend on the location
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = location;
         }
         
         private void RestFrm_Load(object sender, EventArgs e)
@@ -123,7 +129,7 @@ namespace Reminder
                         KeyboardBlocker.on();//解锁键盘
                     }
 
-                    if (rst_s == 0)
+                    if (rst_s == 0 && main_screen)
                     {
                         WorkFrm workFrm = new WorkFrm(wrk_m, rst_m2, input_flag);
                         workFrm.Show();
