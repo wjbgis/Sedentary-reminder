@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
+using System.Diagnostics;
+using IWshRuntimeLibrary;
 
 namespace Reminder
 {
@@ -34,6 +37,10 @@ namespace Reminder
             else {
                 input_flag = false;
             }
+
+            bool auto_start;
+            auto_start = checkBox1.Checked;
+            SetAutoStart(auto_start);
 
             int wrkTime = (int)this.numWrkTime.Value;
             int rstTime = (int)this.numRstTime.Value;
@@ -77,6 +84,108 @@ namespace Reminder
         {
             AboutBox aboutBox = new AboutBox();
             aboutBox.ShowDialog();
+        }
+
+        private string QuickName = "Reminder";
+
+        private string systemStartPath { get { return Environment.GetFolderPath(Environment.SpecialFolder.Startup); } }
+
+        private string appAllPath { get { return Process.GetCurrentProcess().MainModule.FileName; } }
+
+        private void SetAutoStart(bool auto_run)
+        {
+            // get the path set of this software
+            List<string> shortcurPaths = GetQuickFromFolder(systemStartPath, appAllPath);
+            if (auto_run)
+            {
+                if (shortcurPaths.Count > 1)
+                {
+                    for (int i = 1; i < shortcurPaths.Count; i++)
+                    {
+                        DeleteFile(shortcurPaths[i]);
+                    }
+                }
+                else if (shortcurPaths.Count == 0)
+                {
+                    bool res = CreateShortcut(systemStartPath, QuickName, appAllPath, "Reminder");
+                }
+            }
+            else
+            {
+                if (shortcurPaths.Count > 0)
+                {
+                    for (int i = 0; i < shortcurPaths.Count; i++)
+                    {
+                        DeleteFile(shortcurPaths[i]);
+                    }
+                }
+            }
+        }
+
+        private bool CreateShortcut(string systemStartPath, string quickName, string appAllPath, string description = null)
+        {
+            try
+            {
+                if (!Directory.Exists(systemStartPath)) Directory.CreateDirectory(systemStartPath);
+                string shortcutPath = Path.Combine(systemStartPath, string.Format("{0}.lnk", quickName));
+                WshShell shell = new IWshRuntimeLibrary.WshShell();
+                IWshShortcut shortcut = (IWshRuntimeLibrary.IWshShortcut)shell.CreateShortcut(shortcutPath);
+                shortcut.TargetPath = appAllPath;
+                shortcut.WorkingDirectory = Path.GetDirectoryName(shortcutPath);
+                shortcut.WindowStyle = 1;
+                shortcut.Description = description;
+                shortcut.IconLocation = "ICO2.ico";
+                shortcut.Save();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                string message = ex.Message;
+            }
+            return false;
+        }
+
+        private void DeleteFile(string path)
+        {
+            FileAttributes attr = System.IO.File.GetAttributes(path);
+            if (attr == FileAttributes.Directory)
+            {
+                Directory.Delete(path, true);
+            }
+            else
+            {
+                System.IO.File.Delete(path);
+            }
+        }
+
+        private List<string> GetQuickFromFolder(string systemStartPath, string appAllPath)
+        {
+            List<string> tmpStrs = new List<string>();
+            String tmpStr = null;
+            String[] files = Directory.GetFiles(systemStartPath, "*.lnk");
+            for (int i = 0; i < files.Length; i++)
+            {
+                tmpStr = GetAppPathFromQuick(files[i]);
+                if (tmpStr == appAllPath)
+                {
+                    tmpStrs.Add(files[i]);
+                }
+            }
+            return tmpStrs;
+        }
+
+        private string GetAppPathFromQuick(string shortcutPath)
+        {
+            if (System.IO.File.Exists(shortcutPath))
+            {
+                WshShell shell = new WshShell();
+                IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutPath);
+                return shortcut.TargetPath;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }
