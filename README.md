@@ -6,7 +6,7 @@
 
 ## 下载  
 
-[Download](https://github.com/wjbgis/Sedentary-reminder/releases)
+[Download](https://github.com/cyk2018/Sedentary-reminder/releases/)
 
 ## 介绍
 

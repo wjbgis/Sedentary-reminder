@@ -18,6 +18,7 @@ namespace Reminder
         private bool input_flag;//是否选中锁定键盘
         private bool left_flag;//鼠标左键是否点击
         private Point mouseoff;
+        private RestFrm[] restFrms;
         public WorkFrm()
         {
             InitializeComponent();
@@ -127,8 +128,17 @@ namespace Reminder
                 {
 
                     this.Close();
-                    RestFrm restFrm = new RestFrm(rst_minutes, wrk_m, input_flag);
-                    restFrm.ShowDialog();                   
+                    /*RestFrm restFrm = new RestFrm(rst_minutes, wrk_m, input_flag);
+                    restFrm.ShowDialog();  */
+
+                    // create Restfrm on every screen;
+                    restFrms = new RestFrm[Screen.AllScreens.Count()];
+                    int i = 0;
+                    foreach(var screen in Screen.AllScreens)
+                    {
+                        restFrms[i] = new RestFrm(rst_minutes, wrk_m, input_flag, screen.Primary, screen.Bounds.Location);
+                        restFrms[i++].Show();
+                    }
                 }
             }
         }
