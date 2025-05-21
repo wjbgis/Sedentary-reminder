@@ -25,13 +25,26 @@ namespace Reminder
 
         private void Btn_start_Click(object sender, EventArgs e)
         {
-            bool input_flag;
+            bool input_flag; 
 
             if (this.ckBoxInput.Checked)
             {
-                input_flag = true;
+                if (KeyboardBlocker.IsAdministrator()) 
+                {
+                    input_flag = true;
+                }
+                else
+                {
+                    MessageBox.Show("“休息时屏蔽键盘和鼠标”功能需要管理员权限。\n当前应用未以管理员身份运行，此功能将暂时禁用。",
+                                    "权限提示",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+                    input_flag = false;
+                    this.ckBoxInput.Checked = false; 
+                }
             }
-            else {
+            else
+            {
                 input_flag = false;
             }
 

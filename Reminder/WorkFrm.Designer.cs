@@ -79,6 +79,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.White;
@@ -93,6 +94,7 @@
             // 
             // label3
             // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
             this.label3.Location = new System.Drawing.Point(4, 9);
@@ -106,6 +108,7 @@
             // lblWarn
             // 
             this.lblWarn.AutoSize = true;
+            this.lblWarn.BackColor = System.Drawing.Color.Transparent;
             this.lblWarn.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.lblWarn.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblWarn.ForeColor = System.Drawing.Color.White;
@@ -122,7 +125,7 @@
             // WorkFrm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Green;
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(148, 55);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblWarn);

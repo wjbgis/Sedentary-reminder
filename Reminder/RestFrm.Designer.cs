@@ -52,6 +52,7 @@
             // lbl_seconds
             // 
             this.lbl_seconds.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_seconds.BackColor = System.Drawing.Color.Transparent;
             this.lbl_seconds.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_seconds.ForeColor = System.Drawing.Color.White;
             this.lbl_seconds.Location = new System.Drawing.Point(536, 253);
@@ -62,6 +63,7 @@
             // lbl_minutes
             // 
             this.lbl_minutes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_minutes.BackColor = System.Drawing.Color.Transparent;
             this.lbl_minutes.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_minutes.ForeColor = System.Drawing.Color.White;
             this.lbl_minutes.Location = new System.Drawing.Point(472, 253);
@@ -73,6 +75,7 @@
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(519, 249);
@@ -85,7 +88,9 @@
             // 
             this.lblText.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblText.AutoSize = true;
+            this.lblText.BackColor = System.Drawing.Color.Transparent;
             this.lblText.Font = new System.Drawing.Font("楷体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblText.ForeColor = System.Drawing.Color.White;
             this.lblText.Location = new System.Drawing.Point(82, 189);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(509, 29);
@@ -96,6 +101,7 @@
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Image = global::Reminder.Properties.Resources.sport_64_01;
             this.label2.Location = new System.Drawing.Point(332, 318);
             this.label2.Name = "label2";
@@ -105,7 +111,9 @@
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("楷体", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(272, 257);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(203, 29);
@@ -115,6 +123,7 @@
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Image = global::Reminder.Properties.Resources.sit_64;
             this.label5.Location = new System.Drawing.Point(207, 318);
             this.label5.Name = "label5";
@@ -124,6 +133,7 @@
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Image = global::Reminder.Properties.Resources.sport_64_03;
             this.label4.Location = new System.Drawing.Point(591, 318);
             this.label4.Name = "label4";
@@ -133,7 +143,9 @@
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(318, 358);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(21, 54);
@@ -143,7 +155,9 @@
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(438, 358);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(21, 54);
@@ -153,6 +167,7 @@
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Image = global::Reminder.Properties.Resources.sport_64_02;
             this.label8.Location = new System.Drawing.Point(460, 318);
             this.label8.Name = "label8";
@@ -162,7 +177,9 @@
             // label9
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(582, 358);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(21, 54);
@@ -173,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Green;
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(905, 486);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
